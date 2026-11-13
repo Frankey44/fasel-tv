@@ -1,0 +1,12 @@
+[
+  {
+    "id":"sample-001",
+    "title":"عنوان تجريبي",
+    "type":"movie",
+    "year":"2026",
+    "genre":"دراما",
+    "description":"هذا عنصر تجريبي. استبدله ببيانات محتوى تملك حق عرضه.",
+    "poster":"https://placehold.co/600x900/182235/e5a93b?text=Fasel+TV",
+    "stream":""
+  }
+]

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fasel TV</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark">F</span><span>FASEL <b>TV</b></span></div>
+  <nav id="nav">
+    <button class="nav-item active" data-view="home">الرئيسية</button>
+    <button class="nav-item" data-view="movies">الأفلام</button>
+    <button class="nav-item" data-view="series">المسلسلات</button>
+    <button class="nav-item" data-view="favorites">قائمتي</button>
+  </nav>
+  <div class="search-wrap"><input id="search" placeholder="ابحث عن فيلم أو مسلسل..." aria-label="بحث"><span>⌕</span></div>
+</header>
+<main>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="eyebrow">عالمك الترفيهي في مكان واحد</div>
+      <h1>اكتشف ما يستحق المشاهدة</h1>
+      <p>أفلام ومسلسلات من مصادر بث مرخّصة، في تجربة مصممة لتلفزيونك.</p>
+      <button id="browse" class="primary">استكشف المكتبة <span>←</span></button>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head"><h2 id="section-title">مختارات لك</h2><span id="count"></span></div>
+    <div id="catalog" class="catalog"></div>
+    <div id="empty" class="empty" hidden>لا توجد عناوين هنا حالياً. أضف مصادر بث مرخّصة إلى ملف catalog.json.</div>
+  </section>
+</main>
+<div id="details" class="overlay" hidden>
+  <div class="dialog">
+    <button class="close" id="close-details">✕</button>
+    <div class="detail-layout">
+      <img id="detail-poster" alt="">
+      <div><div class="eyebrow">تفاصيل المحتوى</div><h2 id="detail-title"></h2><p id="detail-description"></p><p id="detail-meta"></p>
+      <button id="play" class="primary">▶ تشغيل</button>
+      <button id="favorite" class="secondary">＋ قائمتي</button></div>
+    </div>
+  </div>
+</div>
+<div id="player" class="overlay player-overlay" hidden>
+  <button class="close player-close" id="close-player">✕ إغلاق</button>
+  <video id="video" controls autoplay></video>
+  <p id="player-message"></p>
+</div>
+<footer>Fasel TV <span>•</span> استخدم مصادر تملك حق عرضها فقط</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

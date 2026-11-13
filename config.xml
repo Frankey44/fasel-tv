@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="http://example.com/faseltv"
+        version="1.0.0" viewmodes="maximized">
+  <tizen:application id="YOUR_APP_ID.FaselTV" package="YOURPKGID" required_version="2.3.1"/>
+  <content src="index.html"/>
+  <name>Fasel TV</name>
+  <icon src="icon.png"/>
+  <tizen:profile name="tv"/>
+  <tizen:setting screen-orientation="landscape" context-menu="disable" background-support="disable" encryption="disable" install-location="auto" />
+  <access origin="*" subdomains="true"/>
+  <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+  <feature name="http://tizen.org/feature/network.internet"/>
+</widget>
